@@ -1,0 +1,1 @@
+/home/phani/.vim/vimrc
