@@ -8,7 +8,7 @@ Installation:
 Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/screenrc ~/.vimrc
+    ln -s ~/.vim/screenrc ~/.screenrc
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
