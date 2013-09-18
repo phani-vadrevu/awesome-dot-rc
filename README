@@ -1,3 +1,6 @@
+Credits fully to this nice vim-cast:
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
 Installation:
 
     git clone git://github.com/nelstrom/dotvim.git ~/.vim
