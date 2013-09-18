@@ -10,6 +10,7 @@ set tabstop=4 " tab expansion
 set shiftwidth=4 " used for >> and << 
 set number
 set autoindent
+set ruler "to display column numbers in status bar
 
 "add sudo rights to a file after opening it
 "LATER: I want to make it reopen the file again with sudo rights
