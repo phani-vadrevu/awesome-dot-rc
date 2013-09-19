@@ -10,3 +10,6 @@
 [submodule "/Users/phani/.vim/bundle/airline"]
 	path = /Users/phani/.vim/bundle/airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/bling/vim-airline
