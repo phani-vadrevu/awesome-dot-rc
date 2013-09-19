@@ -7,3 +7,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "/Users/phani/.vim/bundle/airline"]
+	path = /Users/phani/.vim/bundle/airline
+	url = https://github.com/bling/vim-airline
