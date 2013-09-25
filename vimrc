@@ -5,6 +5,7 @@ filetype plugin indent on
 syntax on
 map! ;; <Esc>" map ;; to Esc
 :nnoremap <NL> i<CR><ESC>
+:nmap <Space> i_<Esc>r  "command for inserting one character
 set expandtab
 set tabstop=4 " tab expansion 
 set shiftwidth=4 " used for >> and << 
