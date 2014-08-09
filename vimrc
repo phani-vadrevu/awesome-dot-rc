@@ -11,8 +11,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'bling/vim-airline'
+"Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
