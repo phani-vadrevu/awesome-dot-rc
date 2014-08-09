@@ -67,6 +67,7 @@ set tw=79 "limit the width to 79, also can use gq to wrap long lines
 command W w !sudo tee % >/dev/null 
 
 "changes recommended in https://github.com/bling/vim-airline/wiki/FAQ
+set t_Co=256
 set laststatus=2
 set ttimeoutlen=50
 set incsearch
