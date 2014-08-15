@@ -5,6 +5,7 @@
     # Create symlinks:
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/screenrc ~/.screenrc
+    ln -s ~/.vim/tmux.conf ~/.tmux.conf
 
     # Install all Vundle Plugins
     vim +PluginInstall +qall
