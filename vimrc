@@ -52,12 +52,13 @@ filetype plugin indent on    " required
 
 "filetype off
 "set nocp
+let mapleader=" "
 filetype plugin indent on
 syntax on
 map! ;; <Esc>" map ;; to Esc
 :nnoremap <NL> i<CR><ESC>
 "command for inserting a space
-:nmap <space> i<space><esc>
+":nmap <space> i<space><esc>
 set expandtab
 set tabstop=4 " tab expansion 
 set shiftwidth=4 " used for >> and << 
@@ -88,6 +89,14 @@ let g:airline#extensions#tabline#enabled = 1
 
 "ctrlp.vim default mode
 let g:ctrlp_cmd = "CtrlPBuffer"
+
+"vim-easymotion
+nmap s <Plug>(easymotion-s)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+let g:EasyMotion_smartcase = 1 " smart case: a -> a or A but A -> A
+let g:EasyMotion_startofline = 0 "maintain horizontal cursor position for jk
+
 
 
 if exists("+showtabline")
