@@ -52,12 +52,13 @@ filetype plugin indent on    " required
 
 "filetype off
 "set nocp
+let mapleader=" "
 filetype plugin indent on
 syntax on
 map! ;; <Esc>" map ;; to Esc
 :nnoremap <NL> i<CR><ESC>
 "command for inserting a space
-:nmap <space> i<space><esc>
+":nmap <space> i<space><esc>
 set expandtab
 set tabstop=4 " tab expansion 
 set shiftwidth=4 " used for >> and << 
@@ -88,3 +89,45 @@ let g:airline#extensions#tabline#enabled = 1
 
 "ctrlp.vim default mode
 let g:ctrlp_cmd = "CtrlPBuffer"
+<<<<<<< HEAD
+=======
+
+"vim-easymotion
+nmap s <Plug>(easymotion-s)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+let g:EasyMotion_smartcase = 1 " smart case: a -> a or A but A -> A
+let g:EasyMotion_startofline = 0 "maintain horizontal cursor position for jk
+
+
+
+if exists("+showtabline")
+     function MyTabLine()
+         let s = ''
+         let t = tabpagenr()
+         let i = 1
+         while i <= tabpagenr('$')
+             let buflist = tabpagebuflist(i)
+             let winnr = tabpagewinnr(i)
+             let s .= '%' . i . 'T'
+             let s .= (i == t ? '%1*' : '%2*')
+             let s .= ' '
+             let s .= i . ')'
+             let s .= ' %*'
+             let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
+             let file = bufname(buflist[winnr - 1])
+             let file = fnamemodify(file, ':p:t')
+             if file == ''
+                 let file = '[No Name]'
+             endif
+             let s .= file
+             let i = i + 1
+         endwhile
+         let s .= '%T%#TabLineFill#%='
+         let s .= (tabpagenr('$') > 1 ? '%999XX' : 'X')
+         return s
+     endfunction
+     set stal=2
+     set tabline=%!MyTabLine()
+endif
+>>>>>>> e4929a4ac33c548579be9042ade8e1a61bcb264c
