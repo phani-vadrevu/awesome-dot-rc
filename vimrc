@@ -13,11 +13,12 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+"vim plugins on github
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
-
+Plugin 'scrooloose/syntastic'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -96,3 +97,6 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 let g:EasyMotion_smartcase = 1 " smart case: a -> a or A but A -> A
 let g:EasyMotion_startofline = 0 "maintain horizontal cursor position for jk
+
+"syntastic
+let g:syntastic_python_flake8_args='--ignore=E501'  " ignore line length flake8 errors
