@@ -82,6 +82,10 @@ set ttimeoutlen=50
 set incsearch
 set hlsearch
 
+"toggle line numbering with F8
+set number
+nnoremap <F8> :set nonumber!<CR>
+
 """""""""""""""""""""""
 "Plugin Customizations
 """""""""""""""""""""""
