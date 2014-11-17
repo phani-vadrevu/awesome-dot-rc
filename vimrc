@@ -100,3 +100,4 @@ let g:EasyMotion_startofline = 0 "maintain horizontal cursor position for jk
 
 "syntastic
 let g:syntastic_python_flake8_args='--ignore=E501'  " ignore line length flake8 errors
+let g:syntastic_python_checkers = ['pyflakes']
