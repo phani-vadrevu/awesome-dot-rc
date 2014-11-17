@@ -11,7 +11,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Lokaltog/vim-easymotion'
-"Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
@@ -67,6 +66,9 @@ set tw=79 "limit the width to 79, also can use gq to wrap long lines
 command W w !sudo tee % >/dev/null 
 
 "changes recommended in https://github.com/bling/vim-airline/wiki/FAQ
+set guifont=Inconsolata\ for\ Powerline:h12
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
 set t_Co=256
 set laststatus=2
 set ttimeoutlen=50
