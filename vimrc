@@ -15,6 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 
 "vim plugins on github
 Plugin 'Lokaltog/vim-easymotion'
+"Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
@@ -75,12 +76,19 @@ set hidden  "enables switching of unsaved buffers
 "LATER: I want to make it reopen the file again with sudo rights
 command W w !sudo tee % >/dev/null 
 
-"changes recommended in https://github.com/bling/vim-airline/wiki/FAQ                             
+"changes recommended in https://github.com/bling/vim-airline/wiki/FAQ
+"set guifont=Inconsolata\ for\ Powerline:h12
+"let g:Powerline_symbols = 'fancy'
+"set encoding=utf-8
 set t_Co=256
 set laststatus=2
 set ttimeoutlen=50
 set incsearch
 set hlsearch
+
+"toggle line numbering with F8
+set number
+nnoremap <F8> :set nonumber!<CR>
 
 """""""""""""""""""""""
 "Plugin Customizations
